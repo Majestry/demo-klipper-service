@@ -1,0 +1,13 @@
+server:
+  port: 80
+application:
+  version: '@project.version@-${random.int}'
+management:
+  endpoints:
+    enabled-by-default: false
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      enabled: true
